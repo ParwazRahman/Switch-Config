@@ -279,7 +279,9 @@ def build_config() -> list:
         f"hostname {TARGET_HOSTNAME}",
         f"username {TARGET_NEW_USER} privilege 15 secret {TARGET_NEW_PASS}",
         f"enable secret {TARGET_ENABLE}",
-        
+        # ──────────────────────────────────────────────────────────────────────────
+        # Your hardening commands
+        # ──────────────────────────────────────────────────────────────────────────
         "mac address-table notification change",
         "mac address-table notification mac-move",
     ]
